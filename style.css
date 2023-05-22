@@ -45,12 +45,12 @@ body {
 }
 
 .container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 75%;
     height: 85%;
     margin: 2rem 0;
     margin: auto;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 
 .container .card{
@@ -59,6 +59,7 @@ body {
 }
 .input-box{
   position: relative;
+  height: 10%;
 }
 .input-box i{
   position: absolute;
@@ -72,13 +73,14 @@ body {
 
 .input-box input[type="text"]{
   min-width: 100%;
-  width: 100px;
+  width: 100%;
   background-color: rgba(7, 7, 56, 0.795);
   padding: 1.5rem;
   padding-left: 8rem;
   border-radius: 10px;
   font-size: 1.8rem;
   color: whitesmoke;
+  border: none;
 }
 .input-box button[type = "submit"]{
   position: absolute;
@@ -93,3 +95,80 @@ body {
   font-size: 1.8rem;
   border: none;
 }
+
+.user-data {
+  width: 100%;
+  height: calc(90% - 1rem);
+  margin-top: 1rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  background-color: var(--light-gray);
+  color: var(--white-color);
+}
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.profile-img img {
+  width: 100px;
+  border-radius: 50%;
+}
+.profile-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+}
+
+#username {
+  color: var(--light-blue);
+  font-weight: 600;
+}
+.profile-link a {
+  text-decoration: none;
+  color: var(--light-blue);
+  font-weight: 800;
+}
+.additional-info {
+  margin-top: 0.5rem;
+}
+.repo-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+  width: 100%;
+  background-color: var(--body-color);
+  border-radius: 10px;
+  color: rgb(214, 236, 12);
+  margin: 3rem 0;
+}
+.repo-info .txt {
+  font-weight: 800;
+}
+
+.social {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px 0;
+}
+.social-info {
+  display: flex;
+  gap: 15px;
+  width: 50%;
+}
+.social-info img {
+  filter: brightness(0) invert(0.8);
+}
+.align-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Media Queries */
