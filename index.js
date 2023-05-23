@@ -1,6 +1,7 @@
 
 const URL = "https://api.github.com/users";
 const btn = document.querySelector("#search-btn");
+const inputSearch = document.querySelector("#user-input")
 
 const themeMode = document.querySelector("#btn-mode");
 const body = document.querySelector('body');
@@ -42,6 +43,14 @@ const updateInfo = (data) => {
 btn.addEventListener("click", (e) => {
   const userInput = document.querySelector("#user-input").value;
   githubData(userInput);
+  userContainer.classList.add("hidden")
+});
+inputSearch.addEventListener("keypress", (e) => {
+if(e.key === "Enter") {
+  const userInput = document.querySelector("#user-input").value;
+  githubData(userInput);
+  userContainer.classList.add("hidden")
+}
 });
 
 const githubData = async (userInput) => {
@@ -57,7 +66,7 @@ const githubData = async (userInput) => {
         userContainer.classList.add("hidden")
         alert("Username Not Found")
       }
-    }catch (err){
+3    }catch (err){
       console.log(err)
     }
   };

@@ -61,6 +61,10 @@ a{
 .container .card{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    /* background-color: red; */
 }
 .input-box{
   position: relative;
@@ -75,8 +79,16 @@ a{
   left: 40px;
   transform: translateY(-50%);
 }
-/* .input-box i img{
-  width: 25px;
+/* .input-box kbd{
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 1rem;
+  border: 1px solid rgb(90, 84, 84);
+  border-radius: 5px;
+  padding: 3px;
 } */
 
 .input-box input[type="search"]{
@@ -119,7 +131,10 @@ input:focus{
   border-radius: 1rem;
   background-color: var(--light-gray);
   color: var(--white-color);
+  /* transition: height 2s; */
+  animation: scalling .4s ease-in-out ;
 }
+
 .profile-info {
   display: flex;
   align-items: center;
@@ -181,10 +196,30 @@ input:focus{
 .social-info img {
   filter: brightness(0) invert(0.8);
 }
+.social-info .location img{
+  width: 17px;
+}
+.social-info #location{
+  margin-left: 3px;
+}
+
 .align-icons {
   display: flex;
   align-items: center;
 }
+
+
+/* @keyframes */
+@keyframes scalling {
+  0%{
+    transform: scaleY(0);
+  }
+  100%{
+    transform: scaleY(1);
+  }
+  
+}
+
 
 /* Media Queries */
 
@@ -203,8 +238,19 @@ input:focus{
     padding: 5px 10px;
     font-size: 1.6rem;
   }
+  /* .input-box kbd{
+    position: absolute;
+    right: 26%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+  
+  } */
   .container{
     width: 88%;
+  }
+  .container .card{
+    margin-top: 3rem;
   }
   .user-data{
     padding: 1.5rem;
@@ -214,5 +260,9 @@ input:focus{
   }
   .additional-info{
     font-size: 1.3rem;
+  }
+  .user-data .social{
+    flex-direction: column;
+    margin-left: 1rem;
   }
 }
