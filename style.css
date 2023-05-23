@@ -73,7 +73,7 @@ a{
   width: 25px;
 }
 
-.input-box input[type="text"]{
+.input-box input[type="search"]{
   min-width: 100%;
   width: 100%;
   background-color: #090936;
@@ -84,7 +84,7 @@ a{
   color: whitesmoke;
   border: none;
 }
-.input-box button[type = "submit"]{
+.input-box button{
   position: absolute;
   right: 40px;
   top: 50%;
