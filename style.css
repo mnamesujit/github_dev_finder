@@ -79,7 +79,7 @@ a{
   left: 40px;
   transform: translateY(-50%);
 }
-/* .input-box kbd{
+.input-box kbd{
   position: absolute;
   right: 15%;
   top: 50%;
@@ -89,7 +89,7 @@ a{
   border: 1px solid rgb(90, 84, 84);
   border-radius: 5px;
   padding: 3px;
-} */
+}
 
 .input-box input[type="search"]{
   /* min-width: 100%; */
@@ -238,14 +238,13 @@ input:focus{
     padding: 5px 10px;
     font-size: 1.6rem;
   }
-  /* .input-box kbd{
+  .input-box kbd{
     position: absolute;
     right: 26%;
     top: 50%;
     transform: translateY(-50%);
-    color: white;
   
-  } */
+  }
   .container{
     width: 88%;
   }
