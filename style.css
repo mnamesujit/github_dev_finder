@@ -47,6 +47,9 @@ a{
 .theme img{
   width: 40px;
 }
+#btn-mode {
+  cursor: pointer;
+}
 
 .container{
     width: 75%;
@@ -62,6 +65,9 @@ a{
 .input-box{
   position: relative;
   height: 10%;
+  width: 100%;
+  background-color: #090936;
+  border-radius: 10px;
 }
 .input-box i{
   position: absolute;
@@ -69,24 +75,27 @@ a{
   left: 40px;
   transform: translateY(-50%);
 }
-.input-box i img{
+/* .input-box i img{
   width: 25px;
-}
+} */
 
 .input-box input[type="search"]{
-  min-width: 100%;
-  width: 100%;
+  /* min-width: 100%; */
+  width: 85%;
   background-color: #090936;
-  padding: 1.5rem;
+  padding: 1.4rem;
   padding-left: 8rem;
   border-radius: 10px;
   font-size: 1.8rem;
   color: whitesmoke;
   border: none;
 }
+input:focus{
+  outline: none;
+}
 .input-box button{
   position: absolute;
-  right: 40px;
+  right: 4rem;
   top: 50%;
   transform: translateY(-50%);
   background-color: var(--light-blue);
@@ -176,6 +185,23 @@ a{
 /* Media Queries */
 
 @media screen and (max-width: 680px) {
+  .nav{
+    margin: 1rem 2rem;
+  }
+  .input-box i{
+    left: 10px;
+  }
+  .input-box input[type="search"]{
+    padding-left: 4rem;
+  }
+  .input-box button{
+    right: 1rem;
+    padding: 5px 10px;
+    font-size: 1.6rem;
+  }
+  .container{
+    width: 88%;
+  }
   .user-data{
     padding: 1.5rem;
   }
