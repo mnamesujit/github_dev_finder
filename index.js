@@ -40,6 +40,20 @@ const updateInfo = (data) => {
 };
 
 
+themeMode.onclick = ("click", (e) => {
+  console.log("You clicked")
+  document.body.classList.toggle("light-theme")
+  if(document.body.classList.contains("light-theme")){
+    themeMode.src = "./icons/icon-moon.svg"
+    themeMode.classList.add("moon-icon")
+  }else{
+    themeMode.src = "./icons/icon-sun.svg"
+  }
+  
+})
+
+
+
 btn.addEventListener("click", (e) => {
   const userInput = document.querySelector("#user-input").value;
   githubData(userInput);

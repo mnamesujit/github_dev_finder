@@ -6,11 +6,12 @@
   font-family: "Space Mono", monospace;
 }
 :root {
-  --white-color: #fff;
+  --text-color: #fff;
+  --light-text: #fff;
   --body-color: #141d2f;
-  --navtext-color: #fff;
   --light-blue: #0a54b4;
-  --light-gray: #1e2a47;
+  --light-gray: #303c57;
+  --secondary: #090936;
 }
 html {
   font-size: 62.5%;
@@ -18,11 +19,18 @@ html {
   /* 1rem=10px */
 }
 body {
-    background-color: #141d2f;
+    background-color: var(--body-color);
     max-width: 1440px;
     height: 100vh;
     
 }
+.light-theme{
+  --body-color: #d0d2d6;
+  --text-color: #131111;
+  --secondary:  #7b7bd1;
+
+}
+
 a{
   text-decoration: none;
   color: yellow;
@@ -38,14 +46,20 @@ a{
     justify-content: space-between;
 }
 .nav h1{
-    color: whitesmoke;
+    color: var(--text-color);
     font-size: 2.2rem;
 }
 .theme{
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.theme img{
+.theme .sun-icon{
   width: 40px;
+}
+.theme .moon-icon{
+  height: 28px;
+  width: 27px;
 }
 #btn-mode {
   cursor: pointer;
@@ -64,13 +78,12 @@ a{
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
-    /* background-color: red; */
 }
 .input-box{
   position: relative;
   height: 10%;
   width: 100%;
-  background-color: #090936;
+  background-color: var(--light-gray);
   border-radius: 10px;
 }
 .input-box i{
@@ -84,7 +97,7 @@ a{
   right: 15%;
   top: 50%;
   transform: translateY(-50%);
-  color: white;
+  color: #fff;
   font-size: 1rem;
   border: 1px solid rgb(90, 84, 84);
   border-radius: 5px;
@@ -94,12 +107,12 @@ a{
 .input-box input[type="search"]{
   /* min-width: 100%; */
   width: 85%;
-  background-color: #090936;
+  background-color: var(--light-gray);
   padding: 1.4rem;
   padding-left: 8rem;
   border-radius: 10px;
   font-size: 1.8rem;
-  color: whitesmoke;
+  color: var(--light-text);
   border: none;
 }
 input:focus{
@@ -111,7 +124,7 @@ input:focus{
   top: 50%;
   transform: translateY(-50%);
   background-color: var(--light-blue);
-  color: white;
+  color: var(--text-color);
   padding: 8px 15px;
   cursor: pointer;
   border-radius: 8px;
