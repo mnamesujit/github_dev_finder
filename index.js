@@ -6,8 +6,6 @@ const themeMode = document.querySelector("#btn-mode");
 const body = document.querySelector('body');
 
 const userContainer = document.querySelector('#user-container')
-console.log(userContainer)
-console.log("called")
 
 
 const userAvatar = document.querySelector("#user-image");
@@ -50,13 +48,13 @@ const githubData = async (userInput) => {
     try {
       const res = await fetch(`${URL}/${userInput}`)
       const data = await res.json()
-      // updateInfo(data);
       if(data.login){
         updateInfo(data);
         userContainer.classList.remove("hidden")
 
       }
       else{
+        userContainer.classList.add("hidden")
         alert("Username Not Found")
       }
     }catch (err){
