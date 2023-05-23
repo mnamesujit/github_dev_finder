@@ -12,6 +12,7 @@
   --light-blue: #0a54b4;
   --light-gray: #303c57;
   --secondary: #090936;
+  --link-color: rgb(170, 170, 15);
 }
 html {
   font-size: 62.5%;
@@ -27,13 +28,14 @@ body {
 .light-theme{
   --body-color: #d0d2d6;
   --text-color: #131111;
-  --secondary:  #7b7bd1;
+  --secondary:  #b9b9c2;
+  --link-color: #0d22e4;
+
 
 }
 
 a{
   text-decoration: none;
-  color: yellow;
 }
 .nav{
     padding: 1em;
@@ -142,8 +144,9 @@ input:focus{
   margin-top: 1.8rem;
   padding: 3rem;
   border-radius: 1rem;
-  background-color: var(--light-gray);
-  color: var(--white-color);
+  background-color: var(--secondary);
+  font-weight: bold;
+  color: var(--text-color);
   /* transition: height 2s; */
   animation: scalling .4s ease-in-out ;
 }
@@ -173,7 +176,7 @@ input:focus{
 }
 .profile-link a {
   text-decoration: none;
-  color: yellow;
+  color: var(--link-color);
   font-weight: 800;
 }
 .additional-info {
@@ -186,7 +189,7 @@ input:focus{
   justify-content: space-evenly;
   height: 100px;
   width: 100%;
-  background-color: var(--body-color);
+  background-color: var(--light-gray);
   border-radius: 10px;
   color: rgb(214, 236, 12);
   margin: 3rem 0;
@@ -206,9 +209,10 @@ input:focus{
   gap: 15px;
   width: 50%;
 }
-.social-info img {
+/* .social-info .icon-img {
   filter: brightness(0) invert(0.8);
-}
+} */
+
 .social-info .location img{
   width: 17px;
 }

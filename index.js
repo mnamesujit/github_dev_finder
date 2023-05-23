@@ -41,7 +41,6 @@ const updateInfo = (data) => {
 
 
 themeMode.onclick = ("click", (e) => {
-  console.log("You clicked")
   document.body.classList.toggle("light-theme")
   if(document.body.classList.contains("light-theme")){
     themeMode.src = "./icons/icon-moon.svg"
@@ -49,7 +48,6 @@ themeMode.onclick = ("click", (e) => {
   }else{
     themeMode.src = "./icons/icon-sun.svg"
   }
-  
 })
 
 
