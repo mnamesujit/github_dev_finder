@@ -39,7 +39,7 @@ const updateInfo = (data) => {
   email.innerText  = data.email ? `${data.email}` : "no-email"
 };
 
-
+// switching light & dark theme
 themeMode.onclick = ("click", (e) => {
   document.body.classList.toggle("light-theme")
   if(document.body.classList.contains("light-theme")){
@@ -50,13 +50,14 @@ themeMode.onclick = ("click", (e) => {
   }
 })
 
-
-
+// Calling api function on search button click event
 btn.addEventListener("click", (e) => {
   const userInput = document.querySelector("#user-input").value;
   githubData(userInput);
   userContainer.classList.add("hidden")
 });
+
+// Calling api function on Enter-Keypress Event
 inputSearch.addEventListener("keypress", (e) => {
 if(e.key === "Enter") {
   const userInput = document.querySelector("#user-input").value;
