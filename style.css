@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
 }
+/* root variables */
 :root {
   --text-color: #fff;
   --light-text: #fff;
@@ -69,7 +70,6 @@ a{
 
 .container{
     width: 75%;
-    /* height: 85%; */
     margin: 2rem 0;
     margin: auto;
 }
@@ -107,7 +107,6 @@ a{
 }
 
 .input-box input[type="search"]{
-  /* min-width: 100%; */
   width: 85%;
   background-color: var(--light-gray);
   padding: 1.4rem;
@@ -147,7 +146,6 @@ input:focus{
   background-color: var(--secondary);
   font-weight: bold;
   color: var(--text-color);
-  /* transition: height 2s; */
   animation: scalling .4s ease-in-out ;
 }
 
@@ -209,8 +207,6 @@ input:focus{
   gap: 15px;
   width: 50%;
 }
-/* 
- */
 
 .social-info .location img{
   width: 17px;
