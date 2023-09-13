@@ -12,8 +12,8 @@
   --body-color: #141d2f;
   --light-blue: #0a54b4;
   --light-gray: #303c57;
-  --secondary: #090936;
-  --link-color: rgb(170, 170, 15);
+  --secondary: #13132c;
+  --link-color: rgb(223, 223, 15);
 }
 html {
   font-size: 62.5%;
@@ -27,10 +27,12 @@ body {
     
 }
 .light-theme{
-  --body-color: #d0d2d6;
+  --body-color: #aeb2bb;
   --text-color: #131111;
-  --secondary:  #b9b9c2;
-  --link-color: #0d22e4;
+  --secondary:  #cacad477;
+  --light-gray: #a6a8ac;
+  --link-color: #0e20c4;
+  --light-blue: #bacbe0;
 
 
 }
@@ -99,7 +101,7 @@ a{
   right: 15%;
   top: 50%;
   transform: translateY(-50%);
-  color: #fff;
+  color: var(--text-color);
   font-size: 1rem;
   border: 1px solid rgb(90, 84, 84);
   border-radius: 5px;
@@ -113,7 +115,7 @@ a{
   padding-left: 8rem;
   border-radius: 10px;
   font-size: 1.8rem;
-  color: var(--light-text);
+  color: var(--text-color);
   border: none;
 }
 input:focus{
@@ -189,7 +191,7 @@ input:focus{
   width: 100%;
   background-color: var(--light-gray);
   border-radius: 10px;
-  color: rgb(214, 236, 12);
+  color: var(--link-color);
   margin: 3rem 0;
 }
 .repo-info .txt {
